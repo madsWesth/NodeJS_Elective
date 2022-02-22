@@ -34,7 +34,8 @@ app.patch("/beers/:id", (req, res) => {
         const beerToUpdateWith = req.body
         //spread operator to get all the properties of the object
         //the last key value pair will overwrite previous key value pairs
-        const updatedBeer = { ...foundBeer, ... newBeer, id : foundBeer.id}
+        //this is an object based on the foundBeer object with properties overwritten by properties from beerToUpdateWith
+        const updatedBeer = { ...foundBeer, ...beerToUpdateWith, id : foundBeer.id}
     
         beers[index] = updatedBeer
     } else {
