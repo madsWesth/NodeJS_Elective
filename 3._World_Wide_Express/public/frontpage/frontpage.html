@@ -10,6 +10,19 @@
 <body>
     <h1>Dinosaurs</h1>
 
+    <div >
+        <p id="dinosaur-display"></p>
+    </div>
+
     <script src="./frontpage/frontpage.js"></script>
+
+    <script>
+        fetch("/calculatecooldinosaurs")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            document.getElementById("dinosaur-display").innerText = data.data
+        })
+    </script>
 </body>
 </html>
