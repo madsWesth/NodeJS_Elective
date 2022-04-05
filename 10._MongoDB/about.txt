@@ -1,0 +1,9 @@
+use <DBName> selects database or makes new one if none exists
+db is short for current database, kinda like the keyword "this"
+
+
+C - db.<DBName>.insert({data: "here"})
+R - db.<DBName>.find({searchTerm: "here"})
+U - db.<DBName>.update({whereClause: "here"}, {newdata: "here"}) - replaces all data with new data
+  - db.<DBName>.update({whereClause: "here"}, { $set {newdata: "here"}}) - doesnt overwrite with old data
+D - db.<DBName>.deleteOne/deleteMany/remove({searchTerm: "here"}) - remove also deletes multiple
