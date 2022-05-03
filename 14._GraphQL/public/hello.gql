@@ -1,0 +1,16 @@
+[11:12] Anders Latif
+    
+let movieId = 4;
+const movies = [
+{​​​​​​ id: 1, title: "The Unbearable Weight of Massive Talent", actorIds: [1] }​​​​​​,
+{​​​​​​ id: 2, title: "Pig", actorIds: [1] }​​​​​​,
+{​​​​​​ id: 3, title: "One Flew Over the Cuckoo's Nest", actorIds: [2] }​​​​​​,
+{​​​​​​ id: 4, title: "Junior", actorIds: [2, 3] }​​​​​​,
+];
+ 
+let actorId = 3;
+const actors = [
+{​​​​​​ id: 1, name: "Nicolas Cage" }​​​​​​,
+{​​​​​​ id: 2, name: "Danny DeVito" }​​​​​​,
+{​​​​​​ id: 3, name: "Arnold Schwarzenegger" }​​​​​​,
+];
